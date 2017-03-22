@@ -18,7 +18,7 @@ OAuth._loginStyle = function (service, config, options) {
     return "popup";
   }
 
-  var loginStyle = (options && options.loginStyle) || config.loginStyle || 'popup';
+  var loginStyle = (options && options.loginStyle) || config.loginStyle || 'redirect';
 
   if (! _.contains(["popup", "redirect"], loginStyle))
     throw new Error("Invalid login style: " + loginStyle);

@@ -7,6 +7,7 @@
     config.credentialSecret;
   }
 
-  window.location = config.redirectUrl;
+  var removedAmpersandURL = config.redirectUrl.replace(/&amp;/g, "&")
+  window.location = removedAmpersandURL
 
 })();
