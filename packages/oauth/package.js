@@ -1,3 +1,5 @@
+console.log('Using DSV custom oauth package');
+
 Package.describe({
   summary: "Common code for OAuth-based services",
   version: "1.1.13"
